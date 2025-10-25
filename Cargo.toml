@@ -1,0 +1,54 @@
+[workspace]
+members = [
+    "runtime",
+    "sdk",
+    "validator",
+    "cli",
+    "keygen",
+    "programs/*",
+    "client",
+    "core",
+    "ledger",
+    "rpc",
+    "transaction-status",
+]
+
+[workspace.package]
+version = "1.18.0"
+authors = ["Spookana Maintainers <maintainers@spookana.com>"]
+repository = "https://github.com/spookana-labs/spookana"
+homepage = "https://spookana.com/"
+license = "Apache-2.0"
+edition = "2021"
+
+[workspace.dependencies]
+# Core dependencies
+serde = "1.0"
+serde_json = "1.0"
+bincode = "1.3"
+bs58 = "0.5"
+thiserror = "1.0"
+log = "0.4"
+tokio = { version = "1.35", features = ["full"] }
+
+# Crypto dependencies
+ed25519-dalek = "2.0"
+sha2 = "0.10"
+sha3 = "0.10"
+curve25519-dalek = "4.0"
+
+# Spookana internal dependencies
+spookana-sdk = { path = "sdk", version = "=1.18.0" }
+spookana-runtime = { path = "runtime", version = "=1.18.0" }
+spookana-client = { path = "client", version = "=1.18.0" }
+spookana-core = { path = "core", version = "=1.18.0" }
+spookana-ledger = { path = "ledger", version = "=1.18.0" }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+
+[profile.release-with-debug]
+inherits = "release"
+debug = true

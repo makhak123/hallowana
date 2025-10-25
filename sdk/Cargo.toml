@@ -1,0 +1,22 @@
+[package]
+name = "spookana-sdk"
+version = "1.18.0"
+description = "Spookana SDK - Halloween-themed blockchain development kit"
+authors = ["Spookana Maintainers <maintainers@spookana.com>"]
+repository = "https://github.com/spookana-labs/spookana"
+license = "Apache-2.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bincode = "1.3"
+bs58 = "0.5"
+thiserror = "1.0"
+ed25519-dalek = "2.0"
+sha2 = "0.10"
+borsh = "0.10"
+
+[features]
+default = []
+program = []

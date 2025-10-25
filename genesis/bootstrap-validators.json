@@ -1,0 +1,49 @@
+{
+  "validators": [
+    {
+      "name": "Dracula's Castle",
+      "identity": "Dracu1a111111111111111111111111111111111111",
+      "vote_account": "DraculaVote1111111111111111111111111111111",
+      "stake": "50000000000000",
+      "commission": 5,
+      "website": "https://dracula.spookana.com",
+      "description": "The original vampire validator, running since genesis block"
+    },
+    {
+      "name": "Frankenstein's Lab",
+      "identity": "Franken5tein1111111111111111111111111111111",
+      "vote_account": "FrankensteinVote111111111111111111111111",
+      "stake": "50000000000000",
+      "commission": 5,
+      "website": "https://frankenstein.spookana.com",
+      "description": "It's alive! A monster of a validator with electrifying performance"
+    },
+    {
+      "name": "The Mummy's Tomb",
+      "identity": "Mummy111111111111111111111111111111111111",
+      "vote_account": "MummyVote111111111111111111111111111111",
+      "stake": "50000000000000",
+      "commission": 5,
+      "website": "https://mummy.spookana.com",
+      "description": "Ancient and reliable, wrapped in layers of security"
+    },
+    {
+      "name": "Werewolf's Den",
+      "identity": "Werewolf1111111111111111111111111111111111",
+      "vote_account": "WerewolfVote111111111111111111111111111",
+      "stake": "50000000000000",
+      "commission": 5,
+      "website": "https://werewolf.spookana.com",
+      "description": "Transforms your transactions at lightning speed"
+    },
+    {
+      "name": "The Witch's Coven",
+      "identity": "Witch111111111111111111111111111111111111",
+      "vote_account": "WitchVote111111111111111111111111111111",
+      "stake": "50000000000000",
+      "commission": 5,
+      "website": "https://witch.spookana.com",
+      "description": "Brewing up the best blocks with magical efficiency"
+    }
+  ]
+}

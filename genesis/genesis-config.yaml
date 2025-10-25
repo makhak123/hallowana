@@ -1,0 +1,85 @@
+# Spookana Genesis Configuration
+# The birth of the Halloween blockchain 🎃
+
+# Network identification
+cluster_type: "MainnetBeta"
+genesis_creation_time: "2024-10-31T00:00:00Z"  # Halloween!
+
+# BOO Token Configuration
+accounts:
+  # Treasury account (The Haunted Vault)
+  - pubkey: "HauntedVau1t1111111111111111111111111111111"
+    lamports: 100000000000000000  # 100M BOO
+    owner: "11111111111111111111111111111111"
+    
+  # Staking rewards pool (The Witch's Cauldron)
+  - pubkey: "WitchCau1dr0n111111111111111111111111111111"
+    lamports: 200000000000000000  # 200M BOO
+    owner: "11111111111111111111111111111111"
+    
+  # Development fund (The Graveyard)
+  - pubkey: "Graveyard111111111111111111111111111111111"
+    lamports: 50000000000000000   # 50M BOO
+    owner: "11111111111111111111111111111111"
+
+# Inflation schedule
+inflation:
+  initial: 0.08  # 8%
+  terminal: 0.015  # 1.5%
+  taper: 0.15  # 15% reduction per year
+  foundation: 0.05  # 5% to foundation
+  foundation_term: 7.0  # years
+
+# Epoch schedule
+epoch_schedule:
+  slots_per_epoch: 432000  # ~2 days
+  leader_schedule_slot_offset: 432000
+  warmup: false
+  first_normal_epoch: 0
+  first_normal_slot: 0
+
+# Rent configuration
+rent:
+  lamports_per_byte_year: 3480
+  exemption_threshold: 2.0
+  burn_percent: 50
+
+# Fee configuration
+fee_rate_governor:
+  target_lamports_per_signature: 5000  # 0.000005 BOO
+  target_signatures_per_slot: 20000
+  min_lamports_per_signature: 5000
+  max_lamports_per_signature: 100000
+
+# Validator configuration
+native_instruction_processors:
+  - name: "system_program"
+    program_id: "11111111111111111111111111111111"
+  - name: "vote_program"
+    program_id: "Vote111111111111111111111111111111111111111"
+  - name: "stake_program"
+    program_id: "Stake11111111111111111111111111111111111111"
+  - name: "config_program"
+    program_id: "Config1111111111111111111111111111111111111"
+
+# Spooky validator names for genesis
+bootstrap_validators:
+  - identity: "Dracu1a111111111111111111111111111111111111"
+    vote_account: "DraculaVote1111111111111111111111111111111"
+    stake: 50000000000000  # 50K BOO
+    
+  - identity: "Franken5tein1111111111111111111111111111111"
+    vote_account: "FrankensteinVote111111111111111111111111"
+    stake: 50000000000000  # 50K BOO
+    
+  - identity: "Mummy111111111111111111111111111111111111"
+    vote_account: "MummyVote111111111111111111111111111111"
+    stake: 50000000000000  # 50K BOO
+    
+  - identity: "Werewolf1111111111111111111111111111111111"
+    vote_account: "WerewolfVote111111111111111111111111111"
+    stake: 50000000000000  # 50K BOO
+    
+  - identity: "Witch111111111111111111111111111111111111"
+    vote_account: "WitchVote111111111111111111111111111111"
+    stake: 50000000000000  # 50K BOO
