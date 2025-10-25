@@ -9,22 +9,6 @@ A spooky fork of the Solana blockchain protocol with Halloween theming throughou
 
 Spookana is a high-performance blockchain based on Solana's architecture, but with a frightfully fun Halloween twist. All the speed and efficiency of Solana, now with 100% more spookiness.
 
-## 👻 Key Features
-
-- **BOO Token**: Native cryptocurrency (instead of SOL)
-- **Haunted Validators**: Network validators with spooky names
-- **Graveyard Consensus**: Proof of History with Halloween flair
-- **Phantom Transactions**: Lightning-fast transaction processing
-- **Witch's Brew RPC**: JSON-RPC API endpoints
-
-## 🕷️ Token Economics
-
-- **Token Name**: BOO
-- **Token Symbol**: BOO
-- **Decimals**: 9
-- **Initial Supply**: 500,000,000 BOO (Five Hundred Million BOO)
-- **Inflation**: Starts at 8% annually, decreasing by 15% per year until reaching 1.5%
-
 ## 🧛 Network Parameters
 
 - **Slots per Epoch**: 432,000 (approximately 2 days)
@@ -91,9 +75,6 @@ cargo test
 \`\`\`bash
 # Check balance
 spookana balance <WALLET_ADDRESS>
-
-# Transfer BOO tokens
-spookana transfer <RECIPIENT> <AMOUNT> --from <SENDER_KEYPAIR>
 
 # Create new wallet
 spookana-keygen new --outfile ~/my-spooky-wallet.json
