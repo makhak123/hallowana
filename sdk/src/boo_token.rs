@@ -1,6 +1,6 @@
-//! BOO Token - The native cryptocurrency of Spookana
+//! HAL Token - The native cryptocurrency of Spookana
 //! 
-//! BOO is the lifeblood of the Spookana blockchain, used for:
+//! HAL is the lifeblood of the Spookana blockchain, used for:
 //! - Transaction fees
 //! - Staking for validators
 //! - Governance participation
@@ -8,9 +8,9 @@
 
 use serde::{Deserialize, Serialize};
 
-/// BOO token configuration
+/// HAL token configuration
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct BooToken {
+pub struct HAlToken {
     /// Total supply in lamports
     pub total_supply: u64,
     /// Circulating supply in lamports
@@ -19,18 +19,18 @@ pub struct BooToken {
     pub inflation_rate: u16,
 }
 
-impl Default for BooToken {
+impl Default for HALToken {
     fn default() -> Self {
         Self {
-            total_supply: 500_000_000 * crate::LAMPORTS_PER_BOO, // 500M BOO
+            total_supply: 500_000_000 * crate::LAMPORTS_PER_HAL, // 500M HAL
             circulating_supply: 0,
             inflation_rate: 800, // 8.00%
         }
     }
 }
 
-impl BooToken {
-    /// Create a new BOO token configuration
+impl HALToken {
+    /// Create a new HAL token configuration
     pub fn new(total_supply: u64, inflation_rate: u16) -> Self {
         Self {
             total_supply,
@@ -55,9 +55,9 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_boo_token_default() {
-        let boo = BooToken::default();
-        assert_eq!(boo.inflation_rate, 800);
-        assert_eq!(boo.inflation_percentage(), 8.0);
+    fn test_HAL_token_default() {
+        let HAL = HALToken::default();
+        assert_eq!(HAL.inflation_rate, 800);
+        assert_eq!(HAL.inflation_percentage(), 8.0);
     }
 }
