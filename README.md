@@ -136,30 +136,3 @@ spookana program deploy target/deploy/my_spooky_program.so
 3. **Theming**: Halloween-themed error messages and logs
 4. **Genesis**: Custom genesis block with Halloween timestamp
 5. **Validators**: Spooky default validator names
-
-## 🎭 Contributing
-
-We welcome contributions from all creatures of the night! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-## 📜 License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
-
-## 🦇 Acknowledgments
-
-- Based on [Solana](https://github.com/solana-labs/solana)
-- Halloween spirit provided by the community
-- Special thanks to all the ghosts, ghouls, and goblins who contributed
-
-## 🔗 Links
-
-- Website: https://spookana.com
-- Documentation: https://docs.spookana.com
-- Explorer: https://explorer.spookana.com
-- Discord: https://discord.gg/spookana
-
----
-
-**Warning**: This is a fork for fun and educational purposes. Always do your own research before using any blockchain network.
-
-🎃 Happy Haunting! 👻
