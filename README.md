@@ -1,4 +1,7 @@
-# 🎃 Spookana - Halloween Solana Fork
+# 🎃 hallowana - Halloween Solana Fork
+
+AFBiPiBFLxn9HibeiP2ft1a6sSVUu6E1161LY59apump
+
 
 A spooky fork of the Solana blockchain protocol with Halloween theming throughout.
 
